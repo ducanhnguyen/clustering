@@ -24,6 +24,16 @@ The following figure shows the result of clustering over iterations. The initial
 
 ### Example 3
 
+This example shows the following:
+
+- how to choose the best number of clusters
+
+- how to use word cloud
+
+Dataset: https://archive.ics.uci.edu/ml/datasets/AAAI+2014+Accepted+Papers
+
+The process is described as follows:
+
 <b>Step 1.</b> Choose the best number of clusters (called K).
 
 I only use column <i>groups</i> to find the best model of clusters. The information in the column <i>groups</i> shows the trend of research.
