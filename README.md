@@ -88,6 +88,11 @@ GMM tries to find the underlying distributions of observations. This is the raw 
 
 <img src="https://github.com/ducanhnguyen/clustering/blob/master/img/gmm_likelihood.png" width="450">
 
+### Example 5. Hierarchical clustering
 
+Dataset: Iris
 
+Result: The hierarchical clustering is shown by dendrogram.
+
+<img src="https://github.com/ducanhnguyen/clustering/blob/master/img/hierarchical_clustering_iris.png" width="850">
 
