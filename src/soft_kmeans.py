@@ -1,7 +1,5 @@
 '''
-The raw implementation of soft-kmeans
-
-Soft-kmeans solves partially the sensitivity of initialization of k-means.
+Implementation of soft-kmeans
 '''
 import matplotlib.pyplot as plt
 import numpy as np

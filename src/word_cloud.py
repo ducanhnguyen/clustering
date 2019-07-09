@@ -176,7 +176,7 @@ def search_word(word, data_train, frequency_threshold=2):
         tokens = txt.split(' ')
 
         # find phrases containing the given word
-        for token_idx in range(1, len(tokens) - 1):
+        for token_idx in range(1, len(tokens) - 1): # ignore the added words
             current = tokens[token_idx]
             next = tokens[token_idx + 1]
             previous = tokens[token_idx - 1]
@@ -237,5 +237,5 @@ if __name__ == '__main__':
     # generate word cloud
     generate_word_cloud(kmeans.labels_, data_train, chosen_num_cluster)
     print('Searching the phrases containing the given word')
-    final_results = search_word('agent', data_train)
+    final_results = search_word('learning', data_train)
     print('Results: ' + str(final_results))
