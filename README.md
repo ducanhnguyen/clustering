@@ -1,20 +1,20 @@
 # clustering
 k-means, soft k-means, etc.
 
-### Example 1
+### Example 1. MNIST
 
-Apply k-means to cluster the minist dataset.
+Apply k-means to cluster the mnist dataset.
 
 Dataset: https://www.kaggle.com/ngbolin/mnist-dataset-digit-recognizer
 
 Because we actually have the true ground set, we can evaluate the quality of k-means using purity.
+Result: <i>Purity [0..1] = 0.585</i>
 
-
-### Example 2
+### Example 2. SOFT-KMEANS
 
 The raw implementation of soft-kmeans
 
-Dataset is generated automatically by using blob.
+Dataset is generated automatically by using blob with 5 clusters, 150 samples.
 
 Soft-kmeans solves partially the sensitivity of initialization of k-means.
 
@@ -22,7 +22,7 @@ The following figure shows the result of clustering over iterations. The initial
 
 <img src="https://github.com/ducanhnguyen/clustering/blob/master/img/blod_iterations.png" width="950">
 
-### Example 3
+### Example 3. WORD CLOUD
 
 This example shows the following:
 
@@ -61,3 +61,29 @@ I collected the extracted information in the column 'title', 'keywords', and 'ab
 For example, with the word <i>learning'</i>:
 
 Result: ['machine LEARNING', 35], ['transfer LEARNING', 27], ['reinforcement LEARNING', 26], ['LEARNING ALGORITHMS', 24], ['metric LEARNING', 19], ['online LEARNING', 14], ['feature LEARNING', 14], ['active LEARNING', 14], ['semi-supervised LEARNING', 11], ['deep LEARNING', 11], ['dictionary LEARNING', 10], ['manifold LEARNING', 9], ['LEARNING ALGORITHM', 9], ['representation LEARNING', 8], ['multi-task LEARNING', 8], ['structure LEARNING', 7], ['multi-label LEARNING', 7], ['machine LEARNING algorithms', 7], ['LEARNING METHODS', 7], ['LEARNING APPROACH', 7], etc.
+
+### Example 4. Gaussian mixture model
+
+Algorithm of gaussian mixture model
+
+<img src="https://github.com/ducanhnguyen/clustering/blob/master/img/gmm_algo.png" width="450">
+
+The likelihood of GMM is as follows. We try to maximize this formula.
+
+<img src="https://github.com/ducanhnguyen/clustering/blob/master/img/gmm_loss.png" width="450">
+
+Results:
+
+<table>
+<tr>
+<td><img src="https://github.com/ducanhnguyen/clustering/blob/master/img/gmm_before.png" width="650"></td>
+<td><img src="https://github.com/ducanhnguyen/clustering/blob/master/img/gmm_after.png" width="650"></td>
+  </tr>
+</table>
+
+As you can see, the likelihood of GMM increases over iterations.
+<img src="https://github.com/ducanhnguyen/clustering/blob/master/img/gmm_likelihood.png" width="450">
+
+
+
+
