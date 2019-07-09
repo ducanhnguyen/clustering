@@ -8,6 +8,7 @@ Apply k-means to cluster the mnist dataset.
 Dataset: https://www.kaggle.com/ngbolin/mnist-dataset-digit-recognizer
 
 Because we actually have the true ground set, we can evaluate the quality of k-means using purity.
+
 Result: <i>Purity [0..1] = 0.585</i>
 
 ### Example 2. SOFT-KMEANS
@@ -64,15 +65,15 @@ Result: ['machine LEARNING', 35], ['transfer LEARNING', 27], ['reinforcement LEA
 
 ### Example 4. Gaussian mixture model
 
-Algorithm of gaussian mixture model
+- Algorithm of gaussian mixture model
 
-<img src="https://github.com/ducanhnguyen/clustering/blob/master/img/gmm_algo.png" width="450">
+<img style='text-align: center' src="https://github.com/ducanhnguyen/clustering/blob/master/img/gmm_algo.png" width="450">
 
-The likelihood of GMM is as follows. We try to maximize this formula.
+- The likelihood of GMM is as follows. We try to maximize this formula.
 
 <img src="https://github.com/ducanhnguyen/clustering/blob/master/img/gmm_loss.png" width="450">
 
-Results:
+- Results:
 
 <table>
 <tr>
@@ -81,7 +82,8 @@ Results:
   </tr>
 </table>
 
-As you can see, the likelihood of GMM increases over iterations.
+- As you can see, the likelihood of GMM increases over iterations.
+
 <img src="https://github.com/ducanhnguyen/clustering/blob/master/img/gmm_likelihood.png" width="450">
 
 
